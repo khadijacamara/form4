@@ -1,0 +1,278 @@
+
+*{
+    box-sizing:border-box;
+} 
+body{
+    background: url();
+    background-size: cover;
+    font-family: arial;
+    color: #333;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+
+.container {
+    min-height: 100vh;
+    background: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+
+.inner {
+    position: relative;
+    width: 2000%;
+    height: 700px;
+    background: #FFF;
+    max-width: 950px;
+    margin: 50px;
+    display: flex;
+    border: 1px solid #333;
+    margin-left: 400px;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.inner form {
+    width: 20rem;
+    height: 45rem;
+    object-fit: cover;
+    margin-right: 400px;
+    margin-left: 40px;
+    padding:2%;
+}
+
+
+/* Style de l'image */
+.right img {
+    width: 20rem;
+    height: 43.6rem;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* style du formulaire */
+
+ .lignes_labels1 {
+   
+       
+    flex-direction: row;
+    gap: 0px;
+    padding:2%;
+    width: 200%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.ligne_1 .label{
+    font-size:17px;
+    font-weight: bold;
+}
+
+.ligne_1 .input{
+   
+    font-weight: bold;
+    
+}
+
+.input input{
+    padding:8px;
+   
+}
+
+.phrase-lien{
+    display: flex;
+    gap:50px;
+}
+/* style du progress bar */
+
+
+ul, li {
+    padding-right: 100px;
+    font-weight: bold;
+
+}
+
+.progress-bar {
+    background: #837a7a;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top:10%;
+    margin-bottom:-20px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+    background: rgb(79, 202, 106);
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 70px;
+    border-radius: 5%;
+    background: rgb(79, 202, 106);
+    float: right;
+    margin-top: -18px; 
+    margin-right: -20px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* parie bouton */
+
+.bouton-sbmit {
+    display: flex;
+    padding: 20px;
+    /* padding-left: 100px; */
+    margin-top:9%;
+    margin-left:120%;
+    gap: 10%;
+}
+
+.Bnt button, .tonbou button {
+    margin-left: 200%;
+    gap: 50px;
+}
+.Bnt button {
+    background-color: rgb(79, 202, 106);
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid rgb(79, 202, 106);
+}
+
+.tonbou button {
+    border: 2px solid rgb(79, 202, 106);
+    background-color: #FFF;
+    color: #524f4f;
+    margin: 10px;
+    border-radius: 8%;
+    padding: 10px;
+    width: 100px;
+}
+
+/* @media (min-width: 601px) and (max-width: 1024px) {
+
+    .container {
+       flex-direction: column;
+       min-height: 10px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .inner {
+        flex-direction: column;  /* Empiler l'image et le formulaire en colonne */
+        margin-left: 0;
+    }
+
+    .right img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .text {
+        font-size: 20px;
+        left: 0;
+        transform: translate(0, 0);
+        text-align: center;
+    }
+
+    .inner form {
+        width: 90%;  /* Réduire la taille du formulaire */
+        margin-top: 20px;
+    }
+
+    .lignes_labels1 {
+        flex-direction: column;  /* Organiser les éléments verticalement */
+    }
+
+    .bouton-sbmit {
+        flex-direction: column;  /* Empiler les boutons pour les petits écrans */
+        gap: 20px;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .inner {
+        padding:10px;  /* Réduire l'espacement autour de l'inner */
+    }
+
+    .inner {
+       
+        width:10px;
+        height:20px;
+       
+        max-width:50px;
+        margin: 50px;
+        display: flex;
+       
+        margin-left: 0px;
+       
+        margin: auto;
+    
+    }
+    
+     .inner form {
+        flex-direction: column;
+        width: 20px;
+        height: 45px;
+        object-fit: cover;
+        margin-right:100px;
+        margin-left:0px;
+        padding:2PX;
+    } 
+    
+
+    .right img {
+    width: 100px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .lignes_labels1 {
+        padding: 0;  /* Réduire le padding sur les petits écrans */
+    }
+
+    .input input {
+        padding: 10px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .bouton-sbmit {
+        gap:5px;  /* Moins d'espace entre les boutons */
+    }
+
+    .Bnt button, .tonbou button {
+        width: 100px;
+    }
+
+}
